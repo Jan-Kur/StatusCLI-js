@@ -1,9 +1,9 @@
 {
-	"name": "status-cli-js",
-	"version": "0.0.0",
+	"name": "status-cli",
+	"version": "1.0.0",
 	"license": "MIT",
 	"bin": {
-		"cli": "dist/cli.js"
+		"status-cli": "dist/cli.js"
 	},
 	"type": "module",
 	"engines": {
@@ -20,7 +20,7 @@
 	"dependencies": {
 		"@slack/web-api": "^7.9.3",
 		"@types/react-dom": "^19.1.6",
-		"dotenv": "^17.2.0",
+		"dotenv": "^16.6.1",
 		"ink": "^6.0.1",
 		"ink-text-input": "^6.0.0",
 		"meow": "^11.0.0",
