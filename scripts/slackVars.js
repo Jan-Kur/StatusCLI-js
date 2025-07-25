@@ -4,7 +4,7 @@ import path from 'path'
 
 dotenv.config()
 
-const distFile = path.resolve(process.cwd(), 'dist/cli.js')
+const distFile = path.resolve(process.cwd(), 'dist/app.js')
 
 let content = fs.readFileSync(distFile, 'utf8')
 
