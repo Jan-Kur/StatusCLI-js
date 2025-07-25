@@ -1,17 +1,14 @@
 import { WebClient } from '@slack/web-api';
-import dotenv from 'dotenv';
 import { Box, Newline, Text, useInput } from 'ink';
 import TextInput from 'ink-text-input';
 import open from "open";
 import React, { useEffect, useState } from 'react';
 
-dotenv.config()
-
 export default function App() {
 
-   const clientID = process.env["SLACK_CLIENT_ID"]
-   const clientSecret = process.env["SLACK_CLIENT_SECRET"]
-   const redirectURL = process.env["SLACK_REDIRECT_URL"]
+   const clientID = "__SLACK_CLIENT_ID__"
+   const clientSecret = "__SLACK_CLIENT_SECRET__"
+   const redirectURL = "__SLACK_REDIRECT_URL__"
 
    const [state, setState] = useState<'start' | 'codeInput' | 'statusInput' | 'emojiInput' | 'end'>('start')
    const [code, setCode] = useState("")

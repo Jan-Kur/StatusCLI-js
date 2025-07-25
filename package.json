@@ -1,6 +1,6 @@
 {
 	"name": "status-cli",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"bin": {
 		"status-cli": "dist/cli.js"
@@ -10,7 +10,7 @@
 		"node": ">=16"
 	},
 	"scripts": {
-		"build": "tsc",
+		"build": "tsc && node scripts/slackVars.js",
 		"dev": "tsc --watch",
 		"test": "prettier --check . && xo && ava"
 	},
